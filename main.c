@@ -7,6 +7,8 @@ int main(){
 	int nb2;
 	char operateur;
 
+	int resultat;
+
 	/* Choix de l'opérateur */
 	printf("Bonjour ! Choisissez un opérateur parmi : +, -, *, /, %% : \n");
 	scanf("%s", &operateur);
@@ -20,14 +22,19 @@ int main(){
 
 	if (operateur == '+'){
 		printf("addition\n");
+		resultat = nb1 + nb2;
 	} else if (operateur == '-'){
 		printf("soustraction\n");
+		resultat = nb1 - nb2;
 	} else if (operateur == '*'){
 		printf("multiplication\n");
+		resultat = nb1 * nb2;
 	} else if (operateur == '/'){
 		printf("division\n");
+		resultat = nb1 / nb2;
 	} else if (operateur == '%'){
 		printf("modulo\n");
+		resultat = nb1 % nb2;
 	} else {
 		printf("L'opérateur n'est pas reconnu !\n");
 	}
